@@ -18,6 +18,7 @@ class CreateCrudTable extends Migration
             $table->string('Employee_name');
             $table->string('Item_name');
             $table->integer('stocks');
+            $table->dateTime('created_date');
             // $table->string('password');
 
             $table->timestamps();
