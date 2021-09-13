@@ -19,10 +19,14 @@ class CreateCrudTable extends Migration
             $table->string('Item_name');
             $table->integer('stocks');
             $table->dateTime('created_date');
+            $table->integer('price');
             // $table->string('password');
 
-            $table->timestamps();
+           // $table->timestamps();
+
+         //  $table->foreign('Item_name')->references('id')->on('users');
         });
+
     }
 
     /**
